@@ -102,14 +102,12 @@ This will build the library and an example executable called *global_defs_ex*. T
 | LAND         | 6     | Land                                |
 
 * int radius_m:
-
    * LAUNCH: unused
    * WAYPOINT: radius, in meters, from the waypoint location that the aircraft should pass by the waypoint en-route to the next location. Can be used to create Dubins paths. A positive value indicates a clockwise direction. A negative value a counterclockwise direction.
    * LOITER: radius, in meters, from the location that the aircraft should circle while loitering. A positive value indicates a clockwise direction. A negative value a counterclockwise direction.
    * LAND: unused
 
 * int param:
-   
    * LAUNCH: the pitch attitude in 1/100 of a degree that the aircraft should hold until airspeed and rate of climb is established. i.e. +10 degrees would be represented as 1000.
    * WAYPOINT: the distance from the waypoint to declare the waypoint as "reached" and to advance to the next waypoint. Given in 1/100 meters.
    * LOITER_UNLIM: unused
@@ -119,6 +117,5 @@ This will build the library and an example executable called *global_defs_ex*. T
    * LAND: unused
 
 * int32_t x, y, z:
-
    * NED: the north (x), east (y), and down (z) location of the waypoint in reference to the home location. Given in 1/1000 of a meter.
    * WGS84: the latitude (x), longitude (y), and altitude (z) of the waypoint in WGS84 coordinates. Latitude and longitude are given in degrees scaled by 1e7. Altitude is given in 1/1000 of a meter.
