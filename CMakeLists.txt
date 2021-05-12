@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 # Project information
 project(GlobalDefs
-  VERSION 2.0.0
+  VERSION 2.1.0
   DESCRIPTION "Common definitions used across multiple libraries"
   LANGUAGES CXX
 )
