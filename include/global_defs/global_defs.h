@@ -57,6 +57,19 @@ enum AircraftMode : int8_t {
   TEST = 4
 };
 
+struct MissionItem {
+  bool autocontinue;
+  uint8_t frame;
+  uint16_t cmd;
+  float param1;
+  float param2;
+  float param3;
+  float param4;
+  int32_t x;
+  int32_t y;
+  float z;
+};
+
 }  // namespace bfs
 
 #endif  // INCLUDE_GLOBAL_DEFS_GLOBAL_DEFS_H_
